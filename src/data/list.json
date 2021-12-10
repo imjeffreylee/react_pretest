@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 2,
+    "available": false,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 3,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 4,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 5,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 6,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 7,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 8,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 9,
+    "available": false,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 10,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 11,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 12,
+    "available": false,
+    "checked": false,
+    "name": "00-未派車"
+  },
+  {
+    "id": 13,
+    "available": true,
+    "checked": false,
+    "name": "00-未派車"
+  }
+]
