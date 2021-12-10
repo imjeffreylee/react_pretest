@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledCheckList = styled.div`
-  width: 100%;
+  margin-top: 50px;
   color: rgb(143, 143, 143);
   thead {
     color: rgb(12, 60, 117);

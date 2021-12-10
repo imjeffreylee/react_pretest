@@ -1,6 +1,7 @@
-import { StyledCheckList } from './styles/CheckList.styled';
-import list from '../data/list.json';
 import { useEffect, useState } from 'react';
+
+import list from '../data/list.json';
+import { StyledCheckList } from '../components/styles/CheckList.styled';
 
 const CheckList = (): JSX.Element => {
   const [checkList, setCheckList] = useState(list);
@@ -34,8 +35,8 @@ const CheckList = (): JSX.Element => {
     const currIdCheckedStatus = checkList[currId - 1].checked;
 
     const updatedList = checkList.map(item => {
-      const { id: itemId } = item;
-      if (isInRange(prevId, currId, itemId))
+      const { id: itemId, available } = item;
+      if (isInRange(prevId, currId, itemId) && available)
         return { ...item, checked: !currIdCheckedStatus };
       return item;
     });
@@ -52,7 +53,9 @@ const CheckList = (): JSX.Element => {
   };
 
   useEffect(() => {
-    const allChecked = checkList.every(({ checked }) => checked);
+    const allChecked = checkList
+      .filter(({ available }) => available)
+      .every(({ checked }) => checked);
     if (allChecked) return setAllChecked(true);
     setAllChecked(false);
   }, [checkList]);
