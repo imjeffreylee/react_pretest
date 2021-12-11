@@ -10,5 +10,6 @@ export const StyledSideMenu = styled.div`
   border-right: 2px solid #000;
   li {
     list-style: none;
+    margin: 20px 0;
   }
 `;
