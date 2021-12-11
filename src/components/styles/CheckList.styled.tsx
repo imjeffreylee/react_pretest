@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const StyledCheckList = styled.div`
   margin-top: 50px;
   color: rgb(143, 143, 143);
+  h4 {
+    text-align: center;
+  }
   thead {
     color: rgb(12, 60, 117);
     background-color: rgb(208, 221, 237);

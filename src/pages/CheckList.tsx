@@ -62,6 +62,8 @@ const CheckList = (): JSX.Element => {
 
   return (
     <StyledCheckList>
+      <h4>Hold shift key to select multiple boxes</h4>
+      <h4>Press the first box to toggle select all boxes</h4>
       <table>
         <thead>
           <tr>
