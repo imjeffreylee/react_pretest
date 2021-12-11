@@ -1,53 +1,55 @@
 import styled from 'styled-components';
 
+const asideWidth = 'width: 60px';
 const borderLine = '2px solid #000';
 const textAlign = 'text-align: center';
+const headerFooterHeight = 'height: 30px';
+const bodyHeight = 'height: calc(100% - 64px)';
+const fullDimension = 'width: 100%; height: 100vh';
 
 export const DemoI = styled.div`
-  width: 100%;
-  height: 100vh;
+  ${fullDimension};
   border: ${borderLine};
   .header {
-    height: 30px;
+    ${headerFooterHeight};
     border-bottom: ${borderLine};
-    ${textAlign}
+    ${textAlign};
   }
   .aside {
-    width: 60px;
-    height: calc(100% - 64px);
+    ${asideWidth};
+    ${bodyHeight};
     border-right: ${borderLine};
   }
   .footer {
-    height: 30px;
+    ${headerFooterHeight};
     border-top: ${borderLine};
   }
 `;
 
 export const DemoII = styled.div`
-  width: 100%;
-  height: 100vh;
+  ${fullDimension};
   border: ${borderLine};
   display: flex;
   flex-direction: column;
   .header {
-    height: 30px;
+    ${headerFooterHeight};
     border-bottom: ${borderLine};
-    ${textAlign}
+    ${textAlign};
   }
   .body {
-    height: calc(100% - 64px);
+    ${bodyHeight};
     width: 100%;
     display: flex;
   }
   .aside {
-    width: 60px;
+    ${asideWidth};
     border-right: ${borderLine};
   }
   .main {
     width: calc(100% - 60px);
   }
   .footer {
-    height: 30px;
+    ${headerFooterHeight};
     border-top: ${borderLine};
   }
 `;
